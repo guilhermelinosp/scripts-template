@@ -8,5 +8,5 @@ permissions: write-all
 
 jobs:
   release:
-    uses: guilhermelinosp/ci-templates/.github/workflows/release.yml@main
+    uses: guilhermelinosp/templates/.github/workflows/release.yml@main
     secrets: inherit
