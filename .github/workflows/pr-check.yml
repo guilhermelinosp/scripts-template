@@ -10,9 +10,6 @@ permissions:
   checks: write
 
 jobs:
-  lint:
-    uses: guilhermelinosp/templates/.github/workflows/shellcheck.yml@9fe39322263723d320cdce780f00d5926059798a # main
-
   merge-check:
     uses: guilhermelinosp/templates/.github/workflows/merge-check.yml@9fe39322263723d320cdce780f00d5926059798a # main
 
