@@ -6,9 +6,6 @@ on:
   pull_request:
     branches: [main]
     types: [opened, synchronize, reopened, ready_for_review]
-  workflow_dispatch:
-  schedule:
-    - cron: '23 4 * * 1'
 
 permissions:
   actions: read
