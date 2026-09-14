@@ -13,8 +13,9 @@ permissions:
 jobs:
   release:
     name: release
-    uses: guilhermelinosp/templates/.github/workflows/release.yml@9fe39322263723d320cdce780f00d5926059798a # main
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: guilhermelinosp/templates/.github/workflows/release.yml@745ef1ca8288cd320b0b4dcf1485e34003945c79
+    with:
+      app-client-id: ${{ vars.HELLNET_ACTIONS_CLIENT_ID }}
+    secrets: inherit
     permissions:
       contents: write
